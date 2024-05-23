@@ -2,6 +2,7 @@
 matches.csv
 players.csv
 rankings.csv
+matches_cleaned.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
