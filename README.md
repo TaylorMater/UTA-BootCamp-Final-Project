@@ -10,6 +10,7 @@ Project 4 of the UTA Data Analytics BootCamp
 - Version 4 used the same hyperparameter tuning from version 3 and dropped the player rank and country code columns.
 - Version 5 used the same hyperparameter tuning from version 3 and dropped the player height, age, and hand columns. The 'F' (Tour Finals) level tournaments were also dropped from the data because set scores only go to 4.
 - This model performed well enough that it could be confidently used to predict the outcome of matches using only match stats or match and player stats. The accuracy, precision, recall, F1-score, and ROC AUC are above .8, which is a sign of good predictive power. I would recommend this model to be used in predicting match outcomes using only match stats (version 5) and using match stats and player stats (version 1).
+- A future optimization would be to train the model without using the set score to see if the model can still make an accurate prediction. The set score could have caused overfitting, but if the current model is given all the match stats, it still has good predictive power.
 ## Code Sources
 ### Keegan (Random Forest Classification)
 - https://stackoverflow.com/questions/45565311/pandas-interleave-zip-two-dataframes-by-row \
