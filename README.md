@@ -4,6 +4,7 @@ Project 4 of the UTA Data Analytics BootCamp
 ### Random Forest Classification Model
 - A random forest classification model was used to try and predict the outcomes of tennis matches from 2009-2023. The data contains both categorical and numerical features, so this model was chosen because it is able to handle both types of features. The scores for this model were: \
 ![model scores](/Resources/random_forest_scores.png)
+- Before training the model, the numerical features were standardized, missing numerical data points were imputed using the mean, and missing categorical features were imputed using the most frequent value.
 - Version 1 of the model was a basic random forest using player name, country code, rank, rank points, age, height, ID, hand, and match stats. 
 - Version 2 was a random forest with grid search cv to find the best hyperparameters.
 - Version 3 was a random forest with stratified k-fold cross-validation added to the grid search cv to prevent overfitting. The player ID, name, and rank points columns were dropped.
