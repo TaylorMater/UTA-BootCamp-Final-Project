@@ -8,7 +8,7 @@ Project 4 of the UTA Data Analytics BootCamp
 - Version 2 was a random forest with grid search cv to find the best hyperparameters.
 - Version 3 was a random forest with stratified k-fold cross-validation added to the grid search cv to prevent overfitting. The player ID, name, and rank points columns were dropped.
 - Version 4 used the same hyperparameter tuning from version 3 and dropped the player rank and country code columns.
-- Version 5 used the same hyperparameter tuning from version 3 and dropped the player height, age, and hand columns. The 'F' level tournaments were also dropped from the data.
+- Version 5 used the same hyperparameter tuning from version 3 and dropped the player height, age, and hand columns. The 'F' (Tour Finals) level tournaments were also dropped from the data because set scores only go to 4.
 - This model performed well enough that it could be confidently used to predict the outcome of matches using only match stats or match and player stats. The accuracy, precision, recall, F1-score, and ROC AUC are above .8, which is a sign of good predictive power. I would recommend this model to be used in predicting match outcomes using only match stats (version 5) and using match stats and player stats (version 1).
 ## Code Sources
 ### Keegan (Random Forest Classification)
