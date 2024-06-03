@@ -13,13 +13,17 @@ The goal of this project was to use a few of the machine learning algorithms we 
     - tensorflow
     - sqlite3
     - scikeras
+ 
+- Git Large File Storage might be necessary to handle the sqlite database
+- python version 3.10
+    
 
 ## Repo Overview
 - /resources - contains sqlite database and tables of model performance over different versions
 - /keegan-scripts - contains data cleaning notebook and notebooks for random forest classification models
 
 ## Installation
-Clone the repository: git@github.com/TaylorMater/UTA-BootCamp-Final-Project.git
+Clone the repository, download necessary libraries above. Run the data cleaning script in `keegan-scripts` to create the `.csv` file that all of the scripts rely on from the original sqlite database. From there, choose the script of the model you want to investigate, and run all cells from there. 
 
 ## Usage
 
