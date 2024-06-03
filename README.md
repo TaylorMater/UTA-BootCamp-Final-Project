@@ -19,7 +19,7 @@ The goal of this project was to use a few of the machine learning algorithms we 
 - /keegan-scripts - contains data cleaning notebook and notebooks for random forest classification models
 
 ## Installation
-Clone the repository: git@github.com:TaylorMater/UTA-BootCamp-Final-Project.git
+Clone the repository: <span>git@github.com:TaylorMater/UTA-BootCamp-Final-Project.git</span>
 
 ## Usage
 
@@ -54,6 +54,12 @@ Clone the repository: git@github.com:TaylorMater/UTA-BootCamp-Final-Project.git
 
 
 ## Limitations
+- Time and computing power were the two biggest limitations of our models.
+- It was harder to optimize the neural network when its initial metrics were >97% accuracy
+- Hyperparameter tuning also found very marginal improvements, but were hampered by an incredible drain on computing power 
+- Originally we were going to test 12 parameters, but cut the script execution after 2 hours straight with no results. Distributed computing/better library integration would be the solution going forward.
+- Reducing noise/trying to prevent overfitting helped somewhat, but the best result without messing with layers/epochs/neurons too much was only ~98% accuracy
+- Predictive capabilities of neural network, without actual match statistics, would require more data
 
 ## Contributors
 - [Riley Taylor](https://github.com/TaylorMater)
