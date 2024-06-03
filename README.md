@@ -1,5 +1,6 @@
 # Predicting Tennis Match Winners 2009-2023 
 ## Description
+The goal of this project was to use a few of the machine learning algorithms we have been introduced to in the course on a real world data set, in this case, tennis statistics, to try to formulate conclusions about said data. After cleaning and processing the data scrupulously, these investigations led us to identify some of the most important features for determining the winner of a match. We also were able to set up a neural network that performed noticeably better than chance at predicting the winner of a match without any match statistics whatsoever, although that could be subject to overfitting. 
 
 ## Data Sources
 - [tennis_atp by JeffSackman on GitHub](https://github.com/JeffSackmann/tennis_atp)
@@ -11,11 +12,15 @@
     - scikit-learn
     - tensorflow
     - sqlite3
+    - scikeras
+
 ## Repo Overview
 - /resources - contains sqlite database and tables of model performance over different versions
 - /keegan-scripts - contains data cleaning notebook and notebooks for random forest classification models
+
 ## Installation
 Clone the repository: git@github.com:TaylorMater/UTA-BootCamp-Final-Project.git
+
 ## Usage
 
 ## Data Cleaning
@@ -35,6 +40,19 @@ Clone the repository: git@github.com:TaylorMater/UTA-BootCamp-Final-Project.git
 - Version 5 used the same hyperparameter tuning from version 3 and dropped the player height, age, and hand columns. The 'F' (Tour Finals) level tournaments were also dropped from the data because set scores only go to 4.
 - This model performed well enough that it could be confidently used to predict the outcome of matches using only match stats or match and player stats. The accuracy, precision, recall, F1-score, and ROC AUC are above .8, which is a sign of good predictive power. I would recommend this model to be used in predicting match outcomes using only match stats (version 5) and using match stats and player stats (version 1).
 - A future optimization would be to train the model without using the set score to see if the model can still make an accurate prediction. The set score could have caused overfitting, but if the current model is given all the match stats, it still has good predictive power.
+
+### Neural Network Model
+- Numerical features were standardized and missing values were imputed using the mean, while categorical features were one hot encoded and imputed by most frequent value.
+- Version 1: Created neural network where nearly every data column was a feature. Chose to drop innocuous ID-like information or dates. GridSearchCV for hyperparameter tuning (but didn’t check many parameters)
+- Version 2: Version 1 but additional columns dropped - player name and country. Tried to reduce noise. 
+- Version 3: Version 2 but additional columns dropped to reduce noise - round and best_of.
+- Version 4: Version 3 but dropped ‘F’ level tournaments from the data set because they arguably could skew the data. 
+- Version 5: Dropped almost all categorical data/non match data. Continued to drop the ‘F’ level tournaments. Best result, but not surprising.
+- Version 6: Experimental, zero match data, purely features like height, surface, etc. The most “predictive” model, but least accurate/precise. Still, noticeably better than chance.
+
+*For more information on the neural network, please see [riley-scripts](riley-scripts/)*
+
+
 ## Limitations
 
 ## Contributors
