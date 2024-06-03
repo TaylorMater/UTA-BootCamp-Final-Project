@@ -48,6 +48,8 @@ Clone the repository, download necessary libraries above. Run the data cleaning 
 - Categorical variables, such as the surface type, tournament level, player country code, and match round, were one-hot encoded to convert them into a suitable format for machine learning.
 - We selected several key features that we believed would impact match outcomes, including player age, minutes played, player aces, double faults, serve points, and rankings.
 - We then trained a Support Vector Classifier (SVC) with a linear kernel using an 80-20 train-test split.
+  ![image](https://github.com/TaylorMater/UTA-BootCamp-Final-Project/assets/153253842/9c4b1aad-555b-4454-8647-6c896243825c)
+
 
 ### Neural Network Model
 - 6 versions of this model were created over various iterations in optimization/attempts at exploring a predictive network independent from match statistics. Their scores were \
