@@ -43,6 +43,12 @@ Clone the repository, download necessary libraries above. Run the data cleaning 
 - This model performed well enough that it could be confidently used to predict the outcome of matches using only match stats or match and player stats. The accuracy, precision, recall, F1-score, and ROC AUC are above .8, which is a sign of good predictive power. I would recommend this model to be used in predicting match outcomes using only match stats (version 5) and using match stats and player stats (version 1).
 - A future optimization would be to train the model without using the set score to see if the model can still make an accurate prediction. The set score could have caused overfitting, but if the current model is given all the match stats, it still has good predictive power.
 
+### Support Vector Classifier (SVC)
+- We handled missing values by removing rows with incomplete data. 
+- Categorical variables, such as the surface type, tournament level, player country code, and match round, were one-hot encoded to convert them into a suitable format for machine learning.
+- We selected several key features that we believed would impact match outcomes, including player age, minutes played, player aces, double faults, serve points, and rankings.
+- We then trained a Support Vector Classifier (SVC) with a linear kernel using an 80-20 train-test split.
+
 ### Neural Network Model
 - 6 versions of this model were created over various iterations in optimization/attempts at exploring a predictive network independent from match statistics. Their scores were \
 ![model scores](/Resources/neural_network_scores.png)
