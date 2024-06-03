@@ -46,6 +46,8 @@ Clone the repository, download necessary libraries above. Run the data cleaning 
 - A future optimization would be to train the model without using the set score to see if the model can still make an accurate prediction. The set score could have caused overfitting, but if the current model is given all the match stats, it still has good predictive power.
 
 ### Neural Network Model
+- 6 versions of this model were created over various iterations in optimization/attempts at exploring a predictive network independent from match statistics. Their scores were \
+![model scores](/Resources/neural_network_scores.png)
 - Numerical features were standardized and missing values were imputed using the mean, while categorical features were one hot encoded and imputed by most frequent value.
 - Version 1: Created neural network where nearly every data column was a feature. Chose to drop innocuous ID-like information or dates. GridSearchCV for hyperparameter tuning (but didn’t check many parameters)
 - Version 2: Version 1 but additional columns dropped - player name and country. Tried to reduce noise. 
