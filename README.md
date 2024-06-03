@@ -25,8 +25,6 @@ The goal of this project was to use a few of the machine learning algorithms we 
 ## Installation
 Clone the repository, download necessary libraries above. Run the data cleaning script in `keegan-scripts` to create the `.csv` file that all of the scripts rely on from the original sqlite database. From there, choose the script of the model you want to investigate, and run all cells from there. 
 
-## Usage
-
 ## Data Cleaning
 - Filtered out lower level tournaments (Challengers, Satellites/ITFs, and Davis Cup), qualifying rounds, and matches before the 2009 season because that is when the ranking system changed.
 - All set scores were in one column, so the scores for each set and each player were separated into their respective columns.
