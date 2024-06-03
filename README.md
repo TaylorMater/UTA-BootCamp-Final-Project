@@ -19,7 +19,7 @@ The goal of this project was to use a few of the machine learning algorithms we 
 - /keegan-scripts - contains data cleaning notebook and notebooks for random forest classification models
 
 ## Installation
-Clone the repository: <span>git@github.com:TaylorMater/UTA-BootCamp-Final-Project.git</span>
+Clone the repository: git@github.com/TaylorMater/UTA-BootCamp-Final-Project.git
 
 ## Usage
 
