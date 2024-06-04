@@ -1,6 +1,6 @@
 # Predicting Tennis Match Winners 2009-2023 
 ## Description
-The goal of this project was to use a few of the machine learning algorithms we have been introduced to in the course on a real world data set, in this case, tennis statistics, to try to formulate conclusions about said data. After cleaning and processing the data scrupulously, these investigations led us to identify some of the most important features for determining the winner of a match. We also were able to set up a neural network that performed noticeably better than chance at predicting the winner of a match without any match statistics whatsoever, although that could be subject to overfitting. 
+The goal of this project was to use a few of the machine learning algorithms we have been introduced to in the course on a real world data set, in this case, tennis statistics, to try to formulate conclusions about said data. After cleaning and processing the data scrupulously, these investigations led us to identify some of the most important features for determining the winner of a match. We also were able to set up a neural network that performed noticeably better than chance at predicting the winner of a match without any match statistics whatsoever, although that could be subject to overfitting. Presentation slides [here](https://docs.google.com/presentation/d/1Qq7w7HWuwbpAAd2Q-pAjcytenulVI3AKPGELWZcJQKs/edit#slide=id.p)
 
 ## Data Sources
 - [tennis_atp by JeffSackman on GitHub](https://github.com/JeffSackmann/tennis_atp)
@@ -21,6 +21,9 @@ The goal of this project was to use a few of the machine learning algorithms we 
 ## Repo Overview
 - /resources - contains sqlite database and tables of model performance over different versions
 - /keegan-scripts - contains data cleaning notebook and notebooks for random forest classification models
+- /michael-scripts - contains linear SVC and polynomial model scripts
+- /rafa-scripts - contains linear SVC model scripts
+- /riley-scripts - contains Neural Network model scripts
 
 ## Installation
 Clone the repository, download necessary libraries above. Run the data cleaning script in `keegan-scripts` to create the `.csv` file that all of the scripts rely on from the original sqlite database. From there, choose the script of the model you want to investigate, and run all cells from there. 
